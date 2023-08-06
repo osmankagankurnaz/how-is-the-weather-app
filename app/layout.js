@@ -1,3 +1,4 @@
+import Container from '@/components/container'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} flex bg-third w-screen h-screen`}> 
+          {children}
+      </body>
     </html>
   )
 }
